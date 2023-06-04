@@ -1,19 +1,12 @@
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
+import Carousel from '../components/Carousel';
 
-function App() {
-  return (
-    <div className="App bg-primary-100 mt-10">
-      <Router>
-      <Navbar/>
-        <Routes>
-          <Route>404 not found!</Route>
-        </Routes>
-      </Router>
-    </div>
-  );
+function Home() {
+    return (
+        <div className="Home mt-5">
+            <Carousel/>
+        </div>
+    );
 }
 
-export default App;
+export default Home;
