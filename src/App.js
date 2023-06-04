@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import GalleryView from './pages/GalleryView';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/gallery" element={<GalleryView />} />
                 <Route path="/modal" element={<Modal />} />
                 <Route>404 not found!</Route>
             </Routes>
