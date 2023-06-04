@@ -14,7 +14,7 @@ const MasonrySection = () => {
         setSelectedImage(null);
     };
 
-    const limitedData = data.slice(0, 6);
+    const limitedData = data.slice(0, 9);
 
     return (
         <div className="max-w-[1640px] w-full m-auto py-5 px-2">
