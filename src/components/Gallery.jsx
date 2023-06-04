@@ -45,7 +45,7 @@ const Gallery = () => {
         </div>
 
         <h1 className="text-orange-600 font-bold text-4xl text-center mt-5">
-            Category Photos
+            CATEGORY PHOTOS
         </h1>
 
         <div className="flex flex-col lg:flex-row justify-center mt-5 mx-auto items-center">

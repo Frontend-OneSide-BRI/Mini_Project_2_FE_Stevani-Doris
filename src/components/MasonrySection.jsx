@@ -14,15 +14,17 @@ const MasonrySection = () => {
         setSelectedImage(null);
     };
 
+    const limitedData = data.slice(0, 6);
+
     return (
         <div className="max-w-[1640px] w-full m-auto py-5 px-2">
             <h1 className="text-orange-600 font-bold text-4xl text-center mt-5 mb-5">
-                Images Library
+                BEST PICTURE
             </h1>
 
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
             <Masonry className="p-2 gap-4">
-            {data.map((item) => (
+            {limitedData.map((item) => (
                 <div
                 key={item.id}
                 className="border shadow-lg rounded-md overflow-hidden hover:scale-105 duration-300 cursor-pointer"
